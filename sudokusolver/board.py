@@ -51,9 +51,6 @@ class Board:
     def set_value(self, value, row, col):
         self.grid[row, col]  = value
 
-    def reset_value(self, row, col):
-        self.grid[row, col] = 0
-
     def get_value(self, row, col):
         return self.grid[row, col]
 

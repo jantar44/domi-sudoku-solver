@@ -20,7 +20,7 @@ class Game:
                 self.board.set_value(guess,row,col)
                 if self.sudoku_solve():
                     return True
-            self.board.reset_value(row,col)
+            self.board.set_value(0, row, col)
         return False
 
     def get_solution(self):
