@@ -7,7 +7,6 @@ class Game:
         self.game_id = Game._counter
         Game._counter += 1
         self.board = Board(string)
-        self.iterations = 0
 
     def sudoku_solve(self):
         if self.board.get_empty_position() is None:
